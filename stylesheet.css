@@ -1,31 +1,41 @@
+:root {
+    --main-bg-color: #2E3440;
+    --main-padding: 140px;
+  }
+
 body {
     font-family: 'roboto', monospace;
-    background-color: #2E3440;
+    background-color: #81A1C1;
     margin: 0px;
 }
 
 .topBanner {
-    background-color: #3B4252;
+    background-color: var(--main-bg-color);
     display: flex;
     height: 50px;
     align-items: center;
     padding: 8px;
     color: white;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
     gap: 20px;
+    border-bottom: 2px solid #4C566A;
     
 }
 
 .navBarLeft, .navBarRight {
-    background-color: #3B4252;
+    background-color: var(--main-bg-color);
     display: flex;
     flex: 1;
-
 }
 
 .navBarRight {
     justify-content: flex-end;
+}
+
+.navBarLink {
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .logo {
@@ -35,22 +45,36 @@ body {
 .mid {
     display: flex;
     height: 250px;
-    background-color: #3B4252;
+    background-color: var(--main-bg-color);
     color: white;
     align-items: center;
     justify-content: space-evenly;
     padding: 8px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+    padding-top: 60px;
 
 
 }
 
 .midLeft, .midRight {
+    display: flex;
     flex: 1;
     justify-content: center;
     padding-left: 10px;
     padding-right: 10px;
+
+}
+
+.midLeft {
+    flex-direction: column;
+    text-align: justify;
+}
+
+.midRight {
+    
+    justify-content: flex-end;
+    
 }
 
 img {
@@ -63,6 +87,70 @@ img {
     
 }
 
+.duckTeam {
+    height: 150px;
+}
+
 .button1 {
     border: 0px;
+    margin: 20px;
+    font-weight: bold;
+    background-color: #5E81AC;
+    color:#D8DEE9;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    font-size: larger;
+}
+
+.signUp {
+    display: flex;
+    justify-content: center;
+}
+
+.mainBar {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column;
+    padding-left: var(--main-padding);
+    padding-right: var(--main-padding);
+}
+
+.mainBarTop {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mainBarMid {
+    display: flex;
+    flex-direction: row;
+    padding-left: 200px;
+    padding-right: 200px;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.mainBarMidCol {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    border-radius: 8px;
+    padding-top: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    
+}
+
+.col {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    
 }
